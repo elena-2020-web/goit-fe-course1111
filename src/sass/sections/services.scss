@@ -1,0 +1,68 @@
+.services__section-title {
+  margin-bottom: 66px;
+}
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.services__list-items {
+  flex-basis: 300px;
+  padding-left: 82px;
+  position: relative;
+
+  &:nth-child(-n + 3) {
+  margin-bottom: 98px;
+}
+
+  &::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 22px;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+}
+
+  &_alarm::before {
+  background-image: url(../images/icon/services/alarm.svg);
+}
+
+  &_graph::before {
+  background-image: url(../images/icon/services/graph.svg);
+}
+
+  &_comp::before {
+  background-image: url(../images/icon/services/computer.svg);
+}
+
+  &_book::before {
+  background-image: url(../images/icon/services/book.svg);
+}
+
+  &_home::before {
+  background-image: url(../images/icon/services/home.svg);
+}
+
+  &_image::before {
+  background-image: url(../images/icon/services/image.svg);
+}
+}
+
+.services__list-title {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.services__list-description {
+  font-size: 15px;
+  font-family: $secondary-font;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: left;
+}

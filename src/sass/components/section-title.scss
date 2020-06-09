@@ -1,0 +1,27 @@
+.section-title {
+  font-size: 24px;
+  font-family: $third-font;
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: center;
+
+  &__block {
+  display: block;
+  font-size: 30px;
+  font-family: $main-font;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 20px;
+}
+
+  &::after {
+  content: '';
+  border-bottom: 3px solid rgb(243, 129, 129);
+  padding-bottom: 42px;
+  display: block;
+  width: 62px;
+  margin: 0px auto;
+}
+}

@@ -1,0 +1,142 @@
+.team {
+  padding-bottom: 84px;
+
+  &__section-title {
+  margin-bottom: 46px;
+}
+
+  &__description {
+  font-size: 15px;
+  font-family: $secondary-font;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+  &__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+  &__list-items {
+  flex-basis: 380px;
+
+  &:hover {
+    .team__overlay {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px rgb(149, 225, 211);
+  transition: opacity 200ms linear;  
+}
+    .team__list-foto {
+  transform: translate(-10px, -10px);
+  transition: transform 200ms linear;
+}
+} 
+}
+
+  &__img-wraper {
+  position: relative;
+}
+
+  &__list-foto {
+  margin-bottom: 30px;
+}
+
+  &__overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(243, 129, 129, 0.9) 0%,
+    rgba(252, 227, 138, 0.9) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+  &__overlay-list {
+  display: flex;
+}
+
+  &__overlay-items {
+  width: 56px;
+  height: 56px;
+  background-color: rgb(252, 227, 138);
+
+  &:not(:last-child) {
+  border-right: 1px solid rgb(243, 129, 129);
+}
+
+  &:hover, :focus {
+   .team__overlay-icon {
+  fill: rgb(255, 255, 255);
+}
+}
+}
+
+  &__overlay-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 200ms linear;
+
+  &:hover {
+  background-color: rgb(243, 129, 129);
+}
+}
+
+  &__overlay-icon {
+  fill: rgb(243, 129, 129);
+  transition: all 200ms linear;
+
+  &_facebook {
+  width: 13px;
+  height: 26px;
+}
+
+  &_twitter {
+  width: 26px;
+  height: 22px;
+}
+
+  &_pinterest {
+  width: 21px;
+  height: 26px;
+}
+
+  &_instagram {
+  width: 26px;
+  height: 26px;
+}
+}
+
+  &__list-items-name {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+  &__list-items-position {
+  font-size: 15px;
+  font-family: $secondary-font;
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+}
+}
